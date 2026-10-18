@@ -1,0 +1,39 @@
+services:
+  relay:
+    build: .
+    restart: unless-stopped
+    user: "0:0"
+    read_only: true
+    cap_drop: [ALL]
+    cap_add: [CHOWN, FOWNER, SETUID, SETGID]
+    security_opt: ["no-new-privileges:true"]
+    environment:
+      HOST: 0.0.0.0
+      PORT: "8080"
+      RELAY_DB: /data/relay/relay.sqlite
+      RELAY_CONFIG: /run/secrets/relay-config.json
+    ports: ["127.0.0.1:${RELAY_LOCAL_PORT:-8080}:8080"]
+    volumes:
+      - relay-data:/data
+      - type: bind
+        source: ${RELAY_SECRET_DIR:?Set private config directory}/relay.secrets.json
+        target: /run/secrets/relay-config.json
+        read_only: true
+        bind:
+          create_host_path: false
+    mem_limit: 256m
+    cpus: 0.5
+    pids_limit: 64
+    stop_grace_period: 30s
+    healthcheck:
+      test: ["CMD", "node", "-e", "fetch('http://127.0.0.1:8080/healthz').then(r=>process.exit(r.ok?0:1)).catch(()=>process.exit(1))"]
+      interval: 30s
+      timeout: 5s
+      retries: 3
+    logging:
+      driver: json-file
+      options:
+        max-size: 10m
+        max-file: "3"
+volumes:
+  relay-data:

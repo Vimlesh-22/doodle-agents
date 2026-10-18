@@ -1,0 +1,44 @@
+
+> doodle-agents@0.2.0 test
+> node --test
+
+✔ OAuth verifies signature issuer audience owner expiry scope and lifetime (110.805351ms)
+✔ OAuth mode rejects static MCP credential before provider lookup (20.298838ms)
+✔ intake validates shape, key, limits and preserves idempotency (4.122679ms)
+✔ owner isolation for get, claim and updates (0.822228ms)
+✔ claim lease exclusion, expiry and stale worker rejection (1.077484ms)
+✔ result updates are idempotent and terminal states cannot be reclaimed (0.922302ms)
+✔ approval pause does not authorize execution (0.844611ms)
+✔ SQLite survives reopening and private permissions (1.230123ms)
+✔ auth scopes, disabled owner, malformed and missing bearer (0.630163ms)
+✔ callback blocks private, reserved and unapproved destinations (1.727746ms)
+✔ encryption authenticates ciphertext and signature matches independent HMAC (1.254117ms)
+✔ subscription verification, idempotency, encryption and expiry cap (1.506629ms)
+✔ wrong challenge and redirect never activate subscription (1.326221ms)
+✔ durable delivery retries preserve event id; ack is not task completion (2.07959ms)
+✔ 410, 413 and revoked owner stop delivery (1.813309ms)
+✔ HTTP unauthorized rejection, malformed JSON, intake and MCP discovery (41.901425ms)
+✔ expired subscription and owner disable prevent delivery (1.739723ms)
+✔ retry budget is bounded and unsubscribe cancels pending (1.861237ms)
+✔ subscription and pending event survive restart (1.398204ms)
+✔ real transport rejects mixed public/private DNS before connecting (0.535848ms)
+✔ transport pins validated IP, retains hostname and returns redirects without following (0.563808ms)
+✔ storage capacity failure rolls back without losing committed tasks (35.379026ms)
+ℹ tests 22
+ℹ suites 0
+ℹ pass 22
+ℹ fail 0
+ℹ cancelled 0
+ℹ skipped 0
+ℹ todo 0
+ℹ duration_ms 226.61981
+
+Container validation (2026-10-18):
+- Initial online dependency installation failed: EAI_AGAIN registry.npmjs.org inside Docker build.
+- Bundled exact upstream npm archives from populated local cache; both SHA512 values matched package-lock.json.
+- Offline Docker build passed.
+- Hardened read-only container: health=200, unauthorized=401, intake=202, PID 1 UID=1000.
+- Replaced container using same test volume: identical intake retry=200, confirming persistence.
+- Temporary test containers and volume removed. Public synthetic fixtures only.
+- Syntax checks passed.
+- Real provider JWKS retrieval, TLS callback connection, plugin registration and actual Doodle task receipt/result remain UNTESTED.

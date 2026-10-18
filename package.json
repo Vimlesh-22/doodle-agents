@@ -1,0 +1,1 @@
+{"name":"doodle-agents","version":"0.2.0","private":true,"type":"module","engines":{"node":">=24"},"scripts":{"start":"node src/start.mjs","test":"node --test","check":"node --check src/app.mjs && node --check src/security.mjs && node --check src/start.mjs"},"dependencies":{"jose":"6.2.12","ipaddr.js":"2.2.0"}}

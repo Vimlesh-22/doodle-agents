@@ -1,0 +1,137 @@
+[
+  {
+    "path": ".dockerignore",
+    "bytes": 72,
+    "sha256": "5d7a6736f9dd5b845128c62ad46ecaa08284955bd933ec75748e40e8fbc3d0f8"
+  },
+  {
+    "path": ".env.example",
+    "bytes": 111,
+    "sha256": "a9bcd978ce506aa43013c1f7e2f3306b232c35e2dd55ce7d1c8d5ad7911822b1"
+  },
+  {
+    "path": ".gitignore",
+    "bytes": 73,
+    "sha256": "2a7dc09ee60b4c4f0e23672b2fa97a4b7d8a0fca1ce8d290385e491a7019d7ed"
+  },
+  {
+    "path": "Dockerfile",
+    "bytes": 475,
+    "sha256": "2e18a9e486099c1c8082db70bed9878e4284bedaabad22558c3aa76db5264be2"
+  },
+  {
+    "path": "OAUTH_SETUP.md",
+    "bytes": 2667,
+    "sha256": "cf993870a775a8dc51d8a5139d133a25acfa5653def0f8ba9a1231b5437d3772"
+  },
+  {
+    "path": "README.md",
+    "bytes": 6806,
+    "sha256": "587bd01f97e532802e05fd3c8fa40ac140deb1ead37f982c8462b108efb26485"
+  },
+  {
+    "path": "SELF_HOST.md",
+    "bytes": 3149,
+    "sha256": "e68a3fe999a48a146a4abebf260469c295c148f640cc18ef48a37702315ecfbd"
+  },
+  {
+    "path": "TEST_RESULTS.txt",
+    "bytes": 2579,
+    "sha256": "54ccbff0faadf78217c8c9d5cfff61e2b28bb4ae40c1d7f025977f6ddc659ac8"
+  },
+  {
+    "path": "compose.yaml",
+    "bytes": 1077,
+    "sha256": "0cda593f1a93266d20969973ff85099eff3b85d57f6a3dc1efa895886ac4dcb8"
+  },
+  {
+    "path": "docs/REBUILD.md",
+    "bytes": 2645,
+    "sha256": "d284e429e4b8dd7836f5ec5c16d0139f99e5415450e2c25fdbc93a27ae6dcd84"
+  },
+  {
+    "path": "docs/SELF_HOST.original.md",
+    "bytes": 6305,
+    "sha256": "3fb9395cbf7e840d6d57ca8f01a8d746ebab7f0140804acef1791a901b2bb93a"
+  },
+  {
+    "path": "examples/nginx.conf",
+    "bytes": 623,
+    "sha256": "715da2e27f8991f2bf4dd86a939f17d57b63fc36f43dce7f594d0185a19cf749"
+  },
+  {
+    "path": "examples/relay-config.example.json",
+    "bytes": 515,
+    "sha256": "386c929f38251d5be7a40ea91c3d55d9857e5f89eddc721cd105d58c5cdaa60d"
+  },
+  {
+    "path": "package-lock.json",
+    "bytes": 1018,
+    "sha256": "8faa0a3694dc0f761fd346398baf8dacb1507960e0137e12bef267abaa10dd8d"
+  },
+  {
+    "path": "package.json",
+    "bytes": 313,
+    "sha256": "c3ae35e09320b9c3941b9f3f344d5d332fea39223a47e7d0d3dcec1d7b5942a9"
+  },
+  {
+    "path": "scripts/container-smoke.py",
+    "bytes": 2661,
+    "sha256": "562faf05b623623610972946c0d26c25f3e9912eaf65786a9625f510d3d641de"
+  },
+  {
+    "path": "scripts/package.py",
+    "bytes": 2119,
+    "sha256": "0ca76c916a2c66e5dee2d757e9c7df118e2df2ff3bf9c8c62bdf75fca15c0c1b"
+  },
+  {
+    "path": "scripts/setup.mjs",
+    "bytes": 1594,
+    "sha256": "58dab0baf6fd903160e8e28f8c889500b06c01ec436612c75309a6b1a15d2a83"
+  },
+  {
+    "path": "src/app.mjs",
+    "bytes": 11769,
+    "sha256": "d6c441c97d277082d248ac216b769a34c22a20d88490289ac1d456a013046744"
+  },
+  {
+    "path": "src/security.mjs",
+    "bytes": 5216,
+    "sha256": "e3514310bf70e777e75a5697a09233819ed42f9b3d83a89fb9def272b151b896"
+  },
+  {
+    "path": "src/start.mjs",
+    "bytes": 1511,
+    "sha256": "53287ee1ae19870736b778598dc772442d16ac5dd9bf93ca2c944ccaf57ded69"
+  },
+  {
+    "path": "src/store.mjs",
+    "bytes": 1386,
+    "sha256": "4a7833aa3efcf4f5ec5e2ef69fae34da03f2c1550c5e39ca36d0ff6280c986aa"
+  },
+  {
+    "path": "test/oauth.test.mjs",
+    "bytes": 1583,
+    "sha256": "1790dc909495020341591a040beb527010a91325cda55bfa7a32cd40f43faef6"
+  },
+  {
+    "path": "test/relay.test.mjs",
+    "bytes": 12313,
+    "sha256": "ce8668ac0c6a26bfed9e3501cba9825c317daa2fcbabee7c5d6f61f2b724e70f"
+  },
+  {
+    "path": "vendor/README.md",
+    "bytes": 555,
+    "sha256": "8b47e4f8d32d785bf3c6c8572e5c00e8a6296734c23a6250a2bc2413aca56703"
+  },
+  {
+    "path": "vendor/ipaddr.js-2.2.0.tgz",
+    "bytes": 15149,
+    "sha256": "effc21a40acab3802e61b4a869821eef549d4d9bd5a6ad6f643bacaaf11aa71a"
+  },
+  {
+    "path": "vendor/jose-6.2.12.tgz",
+    "bytes": 48946,
+    "sha256": "32d9da2aaa0e110cacef2ae21e8dae866201f1428424f839001085fe7351ebfe"
+  }
+]

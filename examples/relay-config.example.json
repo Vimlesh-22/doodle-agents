@@ -1,0 +1,15 @@
+{
+  "owner": "owner",
+  "enabled": true,
+  "encryptionKeyHex": "<OWNER_GENERATED_64_HEX_CHARACTERS>",
+  "intakeTokenSha256": "<SHA256_OF_PRIVATE_INTAKE_TOKEN>",
+  "callbackHosts": ["<EXACT_PROVIDER_CALLBACK_HOST_AFTER_APPROVAL>"],
+  "oauth": {
+    "issuer": "https://identity.example.com/",
+    "audience": "https://relay.example.com/mcp",
+    "jwksUri": "https://identity.example.com/.well-known/jwks.json",
+    "subject": "<VERIFIED_OWNER_SUBJECT>",
+    "scope": "tasks:manage",
+    "algorithms": ["RS256"]
+  }
+}
